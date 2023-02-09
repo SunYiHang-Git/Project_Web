@@ -10,17 +10,20 @@
             text-align: center;
         }
         .box{
-            width: 70%;
+            width: 65%;
             height: 100px;
-            /* background-color: #cfcccc; */
             margin: 0 auto;
             padding: 10px;
+            height: 5500px;
+
         }
         ol{
             list-style: none;
+            display: block;
+            margin: 0 auto;     
         }
         .box ol li{
-            height: 50px;
+          
             font-size: 25px;
             /* background-color: #cbcbcb; */
             margin-top: 5px;
@@ -30,9 +33,18 @@
         li:hover{
             background-color: #cbcbcb;
         }
+        li:hover span{
+            color:red;
+            background-color: #cbcbcb;
+        }
+        li img{
+            width: 90%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
         span{
             display: inline-block;
-            width: 280px;
+            width: 520px;
             height: 50px;
             line-height: 50px;
             font-size: 35px;
@@ -49,6 +61,21 @@
             <li><span>2.检查文件状态：</span> -- git stayus  --  -- git status -s (精简版)</li>
             <li><span>3.跟踪文件状态：</span> -- git add + 文件名</li>
             <li><span>4.提交更新：</span> -- git commit -m "新建了XXX文件"  &lt--描述</li>
+            <li><span>5.暂存已修改文件：</span> -- git add</li>
+            <li><span>6.撤销文件的修改：</span> -- git checkout -- + 文件名</li>
+            <li><span>7.添加多个文件到暂存区：</span> -- git add .</li>
+            <li><span>8.把文件移除暂存区：</span> -- git reset HEAD + 要移除的文件</li>
+            <li><span>9.跳过暂存区，直接存仓库：</span> -- git commit -a -m + "描述信息"</li>
+            <li><span>10.仅仓库移除文件：</span> -- git rm -- cached + 移除的文件名</li>
+            <li><span>11.工作区和仓库同时移除文件：</span> -- git rm - f + 移除的文件名</li>
+            <li><img src="./imgs/12.glob忽略文件.png" alt=""></li>
+            <li><img src="./imgs/12.忽略文件例子.png" alt=""></li>
+            <li><span>13.查看提交历史：</span> -- git log </li>
+            <li><img src="./imgs/13.git查看历史.png" alt=""></li>
+            <li><span>14.退回指定历史版本：</span></li>
+            <li><img src="./imgs/14.git退回指定的版本.png" alt=""></li>
+
+
 
             
         </ol>
