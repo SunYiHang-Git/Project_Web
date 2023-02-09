@@ -5,9 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git的基本使用</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .box{
+            width: 70%;
+            height: 100px;
+            /* background-color: #cfcccc; */
+            margin: 0 auto;
+            padding: 10px;
+        }
+        ol{
+            list-style: none;
+        }
+        .box ol li{
+            height: 50px;
+            font-size: 25px;
+            /* background-color: #cbcbcb; */
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        li:hover{
+            background-color: #cbcbcb;
+        }
+        span{
+            display: inline-block;
+            width: 280px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 35px;
+            padding-left: 10px;
+            /* background-color: #494040; */
+        }
+    </style>
 </head>
 <body>
     <h1>Git的基本使用</h1>
+    <div class="box">
+        <ol>
+            <li><span>1.初始化仓库：</span> -- git init</li>
+            <li><span>2.检查文件状态：</span> -- git stayus  --  -- git status -s (精简版)</li>
+            <li><span>3.跟踪文件状态：</span> -- git add + 文件名</li>
+            <li><span>4.提交更新：</span> -- git commit -m "新建了XXX文件"  &lt--描述</li>
+
+            
+        </ol>
+    </div>
     
 </body>
 </html>
